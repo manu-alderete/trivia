@@ -12,9 +12,11 @@
 		5E75D7BC26EFAC18002C6C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E75D7BB26EFAC18002C6C5D /* Assets.xcassets */; };
 		5E75D7BF26EFAC18002C6C5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E75D7BD26EFAC18002C6C5D /* LaunchScreen.storyboard */; };
 		5E75D7C726EFC7C4002C6C5D /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7C626EFC7C4002C6C5D /* NavigationHelper.swift */; };
-		5E75D7CC26EFC80A002C6C5D /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7CA26EFC80A002C6C5D /* InitialViewController.swift */; };
-		5E75D7CD26EFC80A002C6C5D /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E75D7CB26EFC80A002C6C5D /* InitialViewController.xib */; };
+		5E75D7CC26EFC80A002C6C5D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7CA26EFC80A002C6C5D /* SplashViewController.swift */; };
+		5E75D7CD26EFC80A002C6C5D /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E75D7CB26EFC80A002C6C5D /* SplashViewController.xib */; };
 		5E75D7D126EFC8C3002C6C5D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7D026EFC8C3002C6C5D /* BaseViewController.swift */; };
+		5E75D7D726EFCF7B002C6C5D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7D526EFCF7B002C6C5D /* SignUpViewController.swift */; };
+		5E75D7D826EFCF7B002C6C5D /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E75D7D626EFCF7B002C6C5D /* SignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +27,11 @@
 		5E75D7BE26EFAC18002C6C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E75D7C026EFAC18002C6C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E75D7C626EFC7C4002C6C5D /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
-		5E75D7CA26EFC80A002C6C5D /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		5E75D7CB26EFC80A002C6C5D /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		5E75D7CA26EFC80A002C6C5D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		5E75D7CB26EFC80A002C6C5D /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		5E75D7D026EFC8C3002C6C5D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5E75D7D526EFCF7B002C6C5D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5E75D7D626EFCF7B002C6C5D /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +64,13 @@
 		5E75D7B126EFAC17002C6C5D /* Trivia */ = {
 			isa = PBXGroup;
 			children = (
-				5E75D7D226EFC948002C6C5D /* Model */,
 				5E75D7CE26EFC831002C6C5D /* Startup */,
+				5E75D7D226EFC948002C6C5D /* Model */,
+				5E75D7D326EFCEB8002C6C5D /* Application */,
+				5E75D7CA26EFC80A002C6C5D /* SplashViewController.swift */,
+				5E75D7CB26EFC80A002C6C5D /* SplashViewController.xib */,
 				5E75D7CF26EFC85E002C6C5D /* Resources */,
 				5E75D7C026EFAC18002C6C5D /* Info.plist */,
-				5E75D7CA26EFC80A002C6C5D /* InitialViewController.swift */,
-				5E75D7CB26EFC80A002C6C5D /* InitialViewController.xib */,
 			);
 			path = Trivia;
 			sourceTree = "<group>";
@@ -111,6 +116,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5E75D7D326EFCEB8002C6C5D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5E75D7D426EFCED9002C6C5D /* Auth */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5E75D7D426EFCED9002C6C5D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				5E75D7D526EFCF7B002C6C5D /* SignUpViewController.swift */,
+				5E75D7D626EFCF7B002C6C5D /* SignUpViewController.xib */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +194,8 @@
 			files = (
 				5E75D7BF26EFAC18002C6C5D /* LaunchScreen.storyboard in Resources */,
 				5E75D7BC26EFAC18002C6C5D /* Assets.xcassets in Resources */,
-				5E75D7CD26EFC80A002C6C5D /* InitialViewController.xib in Resources */,
+				5E75D7D826EFCF7B002C6C5D /* SignUpViewController.xib in Resources */,
+				5E75D7CD26EFC80A002C6C5D /* SplashViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,11 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E75D7D726EFCF7B002C6C5D /* SignUpViewController.swift in Sources */,
 				5E75D7D126EFC8C3002C6C5D /* BaseViewController.swift in Sources */,
 				5E75D7C726EFC7C4002C6C5D /* NavigationHelper.swift in Sources */,
 				5E75D7B326EFAC17002C6C5D /* AppDelegate.swift in Sources */,
 				5E75D7B526EFAC17002C6C5D /* SceneDelegate.swift in Sources */,
-				5E75D7CC26EFC80A002C6C5D /* InitialViewController.swift in Sources */,
+				5E75D7CC26EFC80A002C6C5D /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

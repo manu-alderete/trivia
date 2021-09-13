@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="Trivia" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="vg2-rv-1Wd" id="ZrV-ee-CWI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="vg2-rv-1Wd">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alkemy" translatesAutoresizingMaskIntoConstraints="NO" id="PR2-Pl-OcC">
+                    <rect key="frame" x="147" y="121" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="PR2-Pl-OcC" secondAttribute="height" multiplier="1:1" id="aSI-Ox-HqM"/>
+                        <constraint firstAttribute="width" constant="120" id="wKa-fC-UjD"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Iy-Kf-nLf">
+                    <rect key="frame" x="20" y="241" width="374" height="75"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-oh-lPe">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuX-gF-7Ej">
+                            <rect key="frame" x="0.0" y="20.5" width="374" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iZ-0H-ZIn">
+                            <rect key="frame" x="0.0" y="41" width="374" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="od2-Hz-41d"/>
+            <color key="backgroundColor" name="Alkemy Background Light"/>
+            <constraints>
+                <constraint firstItem="0Iy-Kf-nLf" firstAttribute="top" secondItem="PR2-Pl-OcC" secondAttribute="bottom" id="4rh-Dk-Bed"/>
+                <constraint firstItem="PR2-Pl-OcC" firstAttribute="centerX" secondItem="od2-Hz-41d" secondAttribute="centerX" id="GPA-BR-q7i"/>
+                <constraint firstItem="0Iy-Kf-nLf" firstAttribute="leading" secondItem="od2-Hz-41d" secondAttribute="leading" constant="20" id="TR9-66-MDf"/>
+                <constraint firstItem="od2-Hz-41d" firstAttribute="trailing" secondItem="0Iy-Kf-nLf" secondAttribute="trailing" constant="20" id="VOz-iF-JOx"/>
+                <constraint firstItem="PR2-Pl-OcC" firstAttribute="centerY" secondItem="od2-Hz-41d" secondAttribute="centerY" multiplier="0.4" id="rh1-BI-Zw8"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="104"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alkemy" width="2501" height="2501"/>
+        <namedColor name="Alkemy Background Light">
+            <color red="0.90588235294117647" green="0.95686274509803915" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
