@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="Trivia" customModuleProvider="target">
             <connections>
+                <outlet property="iconImageView" destination="PR2-Pl-OcC" id="BYo-Ne-X36"/>
+                <outlet property="nameTextField" destination="8iZ-0H-ZIn" id="KGE-v9-n4i"/>
+                <outlet property="signUpButton" destination="Ew4-4e-HyQ" id="wjV-k2-FcE"/>
                 <outlet property="view" destination="vg2-rv-1Wd" id="ZrV-ee-CWI"/>
             </connections>
         </placeholder>
@@ -20,41 +23,70 @@
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alkemy" translatesAutoresizingMaskIntoConstraints="NO" id="PR2-Pl-OcC">
                     <rect key="frame" x="147" y="121" width="120" height="120"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="PR2-Pl-OcC" secondAttribute="height" multiplier="1:1" id="aSI-Ox-HqM"/>
                         <constraint firstAttribute="width" constant="120" id="wKa-fC-UjD"/>
                     </constraints>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Iy-Kf-nLf">
-                    <rect key="frame" x="20" y="241" width="374" height="75"/>
+                    <rect key="frame" x="20" y="289.5" width="374" height="113"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-oh-lPe">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alkemy Trivia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugD-oh-lPe">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="33.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MsY-w3-MQr">
+                            <rect key="frame" x="0.0" y="33.5" width="374" height="20"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="dCh-uU-byz"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuX-gF-7Ej">
+                            <rect key="frame" x="0.0" y="53.5" width="374" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuX-gF-7Ej">
-                            <rect key="frame" x="0.0" y="20.5" width="374" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iZ-0H-ZIn">
-                            <rect key="frame" x="0.0" y="41" width="374" height="34"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMx-T0-XRt">
+                            <rect key="frame" x="0.0" y="74" width="374" height="5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="WSx-OY-W9q"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iZ-0H-ZIn">
+                            <rect key="frame" x="0.0" y="79" width="374" height="34"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" textContentType="name"/>
                         </textField>
                     </subviews>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ew4-4e-HyQ">
+                    <rect key="frame" x="20" y="442.5" width="374" height="50"/>
+                    <color key="backgroundColor" name="Alkemy Salmon"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="VMx-fC-eNu"/>
+                    </constraints>
+                    <state key="normal" title="Empezar">
+                        <color key="titleColor" red="0.90588235289999997" green="0.95686274510000002" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="od2-Hz-41d"/>
             <color key="backgroundColor" name="Alkemy Background Light"/>
             <constraints>
-                <constraint firstItem="0Iy-Kf-nLf" firstAttribute="top" secondItem="PR2-Pl-OcC" secondAttribute="bottom" id="4rh-Dk-Bed"/>
+                <constraint firstItem="0Iy-Kf-nLf" firstAttribute="top" secondItem="PR2-Pl-OcC" secondAttribute="bottom" multiplier="1.2" id="4rh-Dk-Bed"/>
+                <constraint firstItem="od2-Hz-41d" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ew4-4e-HyQ" secondAttribute="bottom" constant="25" id="Ci2-sw-kVO"/>
                 <constraint firstItem="PR2-Pl-OcC" firstAttribute="centerX" secondItem="od2-Hz-41d" secondAttribute="centerX" id="GPA-BR-q7i"/>
+                <constraint firstItem="od2-Hz-41d" firstAttribute="trailing" secondItem="Ew4-4e-HyQ" secondAttribute="trailing" constant="20" id="NKs-8n-4Cr"/>
                 <constraint firstItem="0Iy-Kf-nLf" firstAttribute="leading" secondItem="od2-Hz-41d" secondAttribute="leading" constant="20" id="TR9-66-MDf"/>
                 <constraint firstItem="od2-Hz-41d" firstAttribute="trailing" secondItem="0Iy-Kf-nLf" secondAttribute="trailing" constant="20" id="VOz-iF-JOx"/>
+                <constraint firstItem="Ew4-4e-HyQ" firstAttribute="leading" secondItem="od2-Hz-41d" secondAttribute="leading" constant="20" id="Xzl-c7-Qqe"/>
+                <constraint firstItem="Ew4-4e-HyQ" firstAttribute="top" secondItem="0Iy-Kf-nLf" secondAttribute="bottom" constant="40" id="Z8T-Vv-trU"/>
                 <constraint firstItem="PR2-Pl-OcC" firstAttribute="centerY" secondItem="od2-Hz-41d" secondAttribute="centerY" multiplier="0.4" id="rh1-BI-Zw8"/>
             </constraints>
             <point key="canvasLocation" x="139" y="104"/>
@@ -63,7 +95,10 @@
     <resources>
         <image name="alkemy" width="2501" height="2501"/>
         <namedColor name="Alkemy Background Light">
-            <color red="0.90588235294117647" green="0.95686274509803915" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.90600001811981201" green="0.9570000171661377" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Alkemy Salmon">
+            <color red="0.80000001192092896" green="0.30199998617172241" blue="0.39599999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

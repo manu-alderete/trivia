@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1585FD6407ED75BA9F93F323 /* libPods-Trivia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A19D6412236AF78BBBA10C7D /* libPods-Trivia.a */; };
 		5E75D7B326EFAC17002C6C5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7B226EFAC17002C6C5D /* AppDelegate.swift */; };
 		5E75D7B526EFAC17002C6C5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7B426EFAC17002C6C5D /* SceneDelegate.swift */; };
 		5E75D7BC26EFAC18002C6C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E75D7BB26EFAC18002C6C5D /* Assets.xcassets */; };
@@ -17,9 +18,13 @@
 		5E75D7D126EFC8C3002C6C5D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7D026EFC8C3002C6C5D /* BaseViewController.swift */; };
 		5E75D7D726EFCF7B002C6C5D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7D526EFCF7B002C6C5D /* SignUpViewController.swift */; };
 		5E75D7D826EFCF7B002C6C5D /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E75D7D626EFCF7B002C6C5D /* SignUpViewController.xib */; };
+		5E75D7DD26EFEAF7002C6C5D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7DB26EFEAF7002C6C5D /* MainViewController.swift */; };
+		5E75D7DE26EFEAF7002C6C5D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E75D7DC26EFEAF7002C6C5D /* MainViewController.xib */; };
+		5E75D7E026EFEC4E002C6C5D /* UIColor+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7DF26EFEC4E002C6C5D /* UIColor+Assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23F673716F1A1EDF8EDAD5EB /* Pods-Trivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trivia.release.xcconfig"; path = "Target Support Files/Pods-Trivia/Pods-Trivia.release.xcconfig"; sourceTree = "<group>"; };
 		5E75D7AF26EFAC17002C6C5D /* Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E75D7B226EFAC17002C6C5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E75D7B426EFAC17002C6C5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +37,11 @@
 		5E75D7D026EFC8C3002C6C5D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5E75D7D526EFCF7B002C6C5D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5E75D7D626EFCF7B002C6C5D /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		5E75D7DB26EFEAF7002C6C5D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5E75D7DC26EFEAF7002C6C5D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		5E75D7DF26EFEC4E002C6C5D /* UIColor+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Assets.swift"; sourceTree = "<group>"; };
+		A19D6412236AF78BBBA10C7D /* libPods-Trivia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Trivia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4F0D08A6B4D632437A07F3A /* Pods-Trivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trivia.debug.xcconfig"; path = "Target Support Files/Pods-Trivia/Pods-Trivia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1585FD6407ED75BA9F93F323 /* libPods-Trivia.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +61,8 @@
 			children = (
 				5E75D7B126EFAC17002C6C5D /* Trivia */,
 				5E75D7B026EFAC17002C6C5D /* Products */,
+				D46023019B5CD3F315CAA18E /* Pods */,
+				7B4FAA7F3E1FA86B22372145 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +80,6 @@
 				5E75D7CE26EFC831002C6C5D /* Startup */,
 				5E75D7D226EFC948002C6C5D /* Model */,
 				5E75D7D326EFCEB8002C6C5D /* Application */,
-				5E75D7CA26EFC80A002C6C5D /* SplashViewController.swift */,
-				5E75D7CB26EFC80A002C6C5D /* SplashViewController.xib */,
 				5E75D7CF26EFC85E002C6C5D /* Resources */,
 				5E75D7C026EFAC18002C6C5D /* Info.plist */,
 			);
@@ -78,6 +89,7 @@
 		5E75D7C826EFC7C7002C6C5D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5E75D7DF26EFEC4E002C6C5D /* UIColor+Assets.swift */,
 				5E75D7C626EFC7C4002C6C5D /* NavigationHelper.swift */,
 			);
 			path = Utils;
@@ -121,7 +133,10 @@
 		5E75D7D326EFCEB8002C6C5D /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				5E75D7DA26EFEADA002C6C5D /* Main */,
 				5E75D7D426EFCED9002C6C5D /* Auth */,
+				5E75D7CA26EFC80A002C6C5D /* SplashViewController.swift */,
+				5E75D7CB26EFC80A002C6C5D /* SplashViewController.xib */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -135,6 +150,32 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		5E75D7DA26EFEADA002C6C5D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5E75D7DB26EFEAF7002C6C5D /* MainViewController.swift */,
+				5E75D7DC26EFEAF7002C6C5D /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7B4FAA7F3E1FA86B22372145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A19D6412236AF78BBBA10C7D /* libPods-Trivia.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D46023019B5CD3F315CAA18E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4F0D08A6B4D632437A07F3A /* Pods-Trivia.debug.xcconfig */,
+				23F673716F1A1EDF8EDAD5EB /* Pods-Trivia.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +183,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E75D7C326EFAC18002C6C5D /* Build configuration list for PBXNativeTarget "Trivia" */;
 			buildPhases = (
+				BFC3FE2083BEFBB1102A637A /* [CP] Check Pods Manifest.lock */,
 				5E75D7AB26EFAC17002C6C5D /* Sources */,
 				5E75D7AC26EFAC17002C6C5D /* Frameworks */,
 				5E75D7AD26EFAC17002C6C5D /* Resources */,
@@ -194,6 +236,7 @@
 			files = (
 				5E75D7BF26EFAC18002C6C5D /* LaunchScreen.storyboard in Resources */,
 				5E75D7BC26EFAC18002C6C5D /* Assets.xcassets in Resources */,
+				5E75D7DE26EFEAF7002C6C5D /* MainViewController.xib in Resources */,
 				5E75D7D826EFCF7B002C6C5D /* SignUpViewController.xib in Resources */,
 				5E75D7CD26EFC80A002C6C5D /* SplashViewController.xib in Resources */,
 			);
@@ -201,12 +244,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BFC3FE2083BEFBB1102A637A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trivia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E75D7AB26EFAC17002C6C5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E75D7DD26EFEAF7002C6C5D /* MainViewController.swift in Sources */,
 				5E75D7D726EFCF7B002C6C5D /* SignUpViewController.swift in Sources */,
+				5E75D7E026EFEC4E002C6C5D /* UIColor+Assets.swift in Sources */,
 				5E75D7D126EFC8C3002C6C5D /* BaseViewController.swift in Sources */,
 				5E75D7C726EFC7C4002C6C5D /* NavigationHelper.swift in Sources */,
 				5E75D7B326EFAC17002C6C5D /* AppDelegate.swift in Sources */,
@@ -347,6 +417,7 @@
 		};
 		5E75D7C426EFAC18002C6C5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4F0D08A6B4D632437A07F3A /* Pods-Trivia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -365,6 +436,7 @@
 		};
 		5E75D7C526EFAC18002C6C5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F673716F1A1EDF8EDAD5EB /* Pods-Trivia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

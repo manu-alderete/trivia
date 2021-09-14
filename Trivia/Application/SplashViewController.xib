@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="Trivia" customModuleProvider="target">
             <connections>
+                <outlet property="iconImageView" destination="iOZ-mF-Mjj" id="Eaz-ta-F1p"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="cRT-Rp-yDq"/>
             </connections>
         </placeholder>
@@ -38,7 +39,7 @@
     <resources>
         <image name="alkemy" width="2501" height="2501"/>
         <namedColor name="Alkemy Background Light">
-            <color red="0.90588235294117647" green="0.95686274509803915" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.90600001811981201" green="0.9570000171661377" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
