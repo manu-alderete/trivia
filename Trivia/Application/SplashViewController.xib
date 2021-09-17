@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alkemy" translatesAutoresizingMaskIntoConstraints="NO" id="iOZ-mF-Mjj">
-                    <rect key="frame" x="147" y="121" width="120" height="120"/>
+                    <rect key="frame" x="147" y="129" width="120" height="120"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="120" id="Iad-34-9EM"/>
                         <constraint firstAttribute="width" secondItem="iOZ-mF-Mjj" secondAttribute="height" multiplier="1:1" id="xE5-Rs-LMg"/>
@@ -30,8 +30,8 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="Alkemy Background Light"/>
             <constraints>
+                <constraint firstItem="iOZ-mF-Mjj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="85" id="IBF-Xi-N96"/>
                 <constraint firstItem="iOZ-mF-Mjj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="cJb-aJ-vtN"/>
-                <constraint firstItem="iOZ-mF-Mjj" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.4" id="k3k-eW-skO"/>
             </constraints>
             <point key="canvasLocation" x="139" y="104"/>
         </view>

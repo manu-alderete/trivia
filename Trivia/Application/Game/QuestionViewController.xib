@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController" customModule="Trivia" customModuleProvider="target">
+            <connections>
+                <outlet property="falseButton" destination="5np-wV-9Go" id="v82-a1-45I"/>
+                <outlet property="questionLabel" destination="YXo-dX-OwS" id="PkJ-P8-sWa"/>
+                <outlet property="trueButton" destination="ROM-e0-kRw" id="wRU-nS-NEK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-G9-fv3">
+                    <rect key="frame" x="30" y="489" width="354" height="177"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5np-wV-9Go">
+                            <rect key="frame" x="0.0" y="0.0" width="177" height="177"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="5np-wV-9Go" secondAttribute="height" multiplier="1:1" id="JIw-EU-wp5"/>
+                            </constraints>
+                            <state key="normal" image="checkmark" catalog="system"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROM-e0-kRw">
+                            <rect key="frame" x="177" y="0.0" width="177" height="177"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ROM-e0-kRw" secondAttribute="height" multiplier="1:1" id="j0e-JA-dRq"/>
+                            </constraints>
+                            <state key="normal" image="xmark" catalog="system"/>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0Y-Pq-zrW">
+                    <rect key="frame" x="20" y="69" width="374" height="38.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Si el dolor se va, la inflamación vuelve?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXo-dX-OwS">
+                    <rect key="frame" x="20" y="392.5" width="374" height="76.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Alkemy Background Light"/>
+            <constraints>
+                <constraint firstItem="hqf-G9-fv3" firstAttribute="top" secondItem="YXo-dX-OwS" secondAttribute="bottom" constant="20" id="2le-dO-arC"/>
+                <constraint firstItem="YXo-dX-OwS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="m0Y-Pq-zrW" secondAttribute="bottom" constant="20" id="EMz-QM-W97"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="m0Y-Pq-zrW" secondAttribute="trailing" constant="20" id="IXZ-GO-Mgi"/>
+                <constraint firstItem="hqf-G9-fv3" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Ixw-fd-zRN"/>
+                <constraint firstItem="YXo-dX-OwS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Qy3-YV-HFR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YXo-dX-OwS" secondAttribute="trailing" constant="20" id="Ysk-Us-Tus"/>
+                <constraint firstItem="m0Y-Pq-zrW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gED-cu-yFy"/>
+                <constraint firstItem="m0Y-Pq-zrW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="my6-h2-eOy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hqf-G9-fv3" secondAttribute="bottom" constant="196" id="tGe-03-V7P"/>
+                <constraint firstItem="hqf-G9-fv3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="uXQ-ao-LQq"/>
+            </constraints>
+            <point key="canvasLocation" x="34.782608695652179" y="71.651785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <namedColor name="Alkemy Background Light">
+            <color red="0.90600001811981201" green="0.9570000171661377" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

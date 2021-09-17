@@ -11,6 +11,14 @@ import UIKit
 class BaseViewController: UIViewController {
     var hidesNavigationBar: Bool = false
     
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -22,6 +30,6 @@ class BaseViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidLoad()
-        navigationController?.isNavigationBarHidden = !hidesNavigationBar
+        navigationController?.isNavigationBarHidden = false
     }
 }
