@@ -10,9 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController" customModule="Trivia" customModuleProvider="target">
             <connections>
-                <outlet property="falseButton" destination="5np-wV-9Go" id="v82-a1-45I"/>
+                <outlet property="falseButton" destination="ROM-e0-kRw" id="1B4-ZK-0jC"/>
                 <outlet property="questionLabel" destination="YXo-dX-OwS" id="PkJ-P8-sWa"/>
-                <outlet property="trueButton" destination="ROM-e0-kRw" id="wRU-nS-NEK"/>
+                <outlet property="trueButton" destination="5np-wV-9Go" id="2yb-m5-THs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,22 +22,46 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-G9-fv3">
-                    <rect key="frame" x="30" y="489" width="354" height="177"/>
+                    <rect key="frame" x="30" y="420.5" width="354" height="142"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5np-wV-9Go">
-                            <rect key="frame" x="0.0" y="0.0" width="177" height="177"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsm-Wd-Qrn">
+                            <rect key="frame" x="0.0" y="0.0" width="177" height="142"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5np-wV-9Go">
+                                    <rect key="frame" x="17.5" y="2" width="142" height="138.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="5np-wV-9Go" secondAttribute="height" multiplier="1:1" id="JIw-EU-wp5"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="checkmark" catalog="system"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="5np-wV-9Go" secondAttribute="height" multiplier="1:1" id="JIw-EU-wp5"/>
+                                <constraint firstItem="5np-wV-9Go" firstAttribute="width" secondItem="hsm-Wd-Qrn" secondAttribute="width" multiplier="0.8" id="Dlb-nn-KOi"/>
+                                <constraint firstItem="5np-wV-9Go" firstAttribute="centerX" secondItem="hsm-Wd-Qrn" secondAttribute="centerX" id="TkG-4q-MHb"/>
+                                <constraint firstItem="5np-wV-9Go" firstAttribute="centerY" secondItem="hsm-Wd-Qrn" secondAttribute="centerY" id="f6H-RD-NHa"/>
+                                <constraint firstItem="5np-wV-9Go" firstAttribute="top" secondItem="hsm-Wd-Qrn" secondAttribute="top" id="rwX-Am-qxa"/>
                             </constraints>
-                            <state key="normal" image="checkmark" catalog="system"/>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROM-e0-kRw">
-                            <rect key="frame" x="177" y="0.0" width="177" height="177"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyd-Xa-bYN">
+                            <rect key="frame" x="177" y="0.0" width="177" height="142"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROM-e0-kRw">
+                                    <rect key="frame" x="17.5" y="2" width="142" height="137.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="ROM-e0-kRw" secondAttribute="height" multiplier="1:1" id="j0e-JA-dRq"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="xmark" catalog="system"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="ROM-e0-kRw" secondAttribute="height" multiplier="1:1" id="j0e-JA-dRq"/>
+                                <constraint firstItem="ROM-e0-kRw" firstAttribute="centerX" secondItem="wyd-Xa-bYN" secondAttribute="centerX" id="4hh-d9-bWW"/>
+                                <constraint firstItem="ROM-e0-kRw" firstAttribute="centerY" secondItem="wyd-Xa-bYN" secondAttribute="centerY" id="LDY-0s-RVj"/>
+                                <constraint firstItem="ROM-e0-kRw" firstAttribute="width" secondItem="wyd-Xa-bYN" secondAttribute="width" multiplier="0.8" id="j5w-kZ-oSZ"/>
+                                <constraint firstItem="ROM-e0-kRw" firstAttribute="top" secondItem="wyd-Xa-bYN" secondAttribute="top" id="jft-5f-uB9"/>
                             </constraints>
-                            <state key="normal" image="xmark" catalog="system"/>
-                        </button>
+                        </view>
                     </subviews>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0Y-Pq-zrW">
@@ -46,8 +70,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Si el dolor se va, la inflamación vuelve?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXo-dX-OwS">
-                    <rect key="frame" x="20" y="392.5" width="374" height="76.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Si el dolor se va, la inflamación vuelve?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YXo-dX-OwS">
+                    <rect key="frame" x="20" y="324" width="374" height="76.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -64,7 +88,8 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YXo-dX-OwS" secondAttribute="trailing" constant="20" id="Ysk-Us-Tus"/>
                 <constraint firstItem="m0Y-Pq-zrW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gED-cu-yFy"/>
                 <constraint firstItem="m0Y-Pq-zrW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="my6-h2-eOy"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hqf-G9-fv3" secondAttribute="bottom" constant="196" id="tGe-03-V7P"/>
+                <constraint firstItem="YXo-dX-OwS" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.8" priority="800" id="rSJ-K4-htd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hqf-G9-fv3" secondAttribute="bottom" constant="25" id="tGe-03-V7P"/>
                 <constraint firstItem="hqf-G9-fv3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="uXQ-ao-LQq"/>
             </constraints>
             <point key="canvasLocation" x="34.782608695652179" y="71.651785714285708"/>

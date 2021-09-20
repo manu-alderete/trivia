@@ -16,7 +16,10 @@ struct Question: Codable {
     let incorrectAnswers: [String]
 
     enum CodingKeys: String, CodingKey {
-        case category, type, difficulty, question
+        case category
+        case type
+        case difficulty
+        case question
         case correctAnswer = "correct_answer"
         case incorrectAnswers = "incorrect_answers"
     }
@@ -32,16 +35,3 @@ struct Question: Codable {
         case multiple
     }
 }
-
-
-//"results": [
-//    {
-//        "category": "History",
-//        "type": "boolean",
-//        "difficulty": "easy",
-//        "question": "The Cold War ended with Joseph Stalin&#039;s death.",
-//        "correct_answer": "False",
-//        "incorrect_answers": [
-//            "True"
-//        ]
-//    },

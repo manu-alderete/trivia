@@ -16,7 +16,6 @@ final class SignUpViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hidesNavigationBar = true
-        
         iconImageView.layer.masksToBounds = true
         iconImageView.layer.cornerRadius = iconImageView.bounds.width / 2
         
@@ -29,26 +28,12 @@ final class SignUpViewController: BaseViewController {
     }
     
     @objc private func signUpPressed() {
-        presentTabBar()
-//        NavigationHelper.setRoot(CategoriesViewController())
+        NavigationHelper.setRoot(TabBarController())
     }
     
     @objc private func informationHandler() {
         let vc = InformationViewController()
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
-    }
-    
-    private func presentTabBar() {
-        let tabBarController = TabBarController()
-        tabBarController.modalPresentationStyle = .overFullScreen
-        self.present(tabBarController, animated: true)
-    }
-}
-
-extension SignUpViewController: UITextFieldDelegate {
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        signUpButton.isEnabled = textField.text?.isEmpty ?? false
-        //        signUpButton.backgroundColor = (textField.text?.isEmpty ?? false)
     }
 }

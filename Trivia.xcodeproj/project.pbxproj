@@ -11,7 +11,6 @@
 		5E4E903526F0E9C900E906FE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E903326F0E9C900E906FE /* QuestionViewController.swift */; };
 		5E4E903626F0E9C900E906FE /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E4E903426F0E9C900E906FE /* QuestionViewController.xib */; };
 		5E4E903826F0F99B00E906FE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E903726F0F99B00E906FE /* Question.swift */; };
-		5E4E903A26F0F9B100E906FE /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E903926F0F9B100E906FE /* Trivia.swift */; };
 		5E4E903C26F0FB9200E906FE /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E903B26F0FB9200E906FE /* Game.swift */; };
 		5E4E904126F101F200E906FE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E904026F101F200E906FE /* Category.swift */; };
 		5E4E904526F1076900E906FE /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4E904326F1076900E906FE /* InformationViewController.swift */; };
@@ -31,10 +30,8 @@
 		5E75D7CD26EFC80A002C6C5D /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E75D7CB26EFC80A002C6C5D /* SplashViewController.xib */; };
 		5E75D7D126EFC8C3002C6C5D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7D026EFC8C3002C6C5D /* BaseViewController.swift */; };
 		5E75D7D726EFCF7B002C6C5D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7D526EFCF7B002C6C5D /* SignUpViewController.swift */; };
-		5E75D7D826EFCF7B002C6C5D /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E75D7D626EFCF7B002C6C5D /* SignUpViewController.xib */; };
-		5E75D7DD26EFEAF7002C6C5D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7DB26EFEAF7002C6C5D /* MainViewController.swift */; };
-		5E75D7DE26EFEAF7002C6C5D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E75D7DC26EFEAF7002C6C5D /* MainViewController.xib */; };
 		5E75D7E026EFEC4E002C6C5D /* UIColor+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E75D7DF26EFEC4E002C6C5D /* UIColor+Assets.swift */; };
+		5E93FE7926F8D7D800EB8F5E /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E93FE7826F8D7D800EB8F5E /* SignUpViewController.xib */; };
 		5EDB580C26F3D5D30061D1A5 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDB580B26F3D5D30061D1A5 /* CategoryService.swift */; };
 		5EDB580E26F3DAC30061D1A5 /* AlamofireAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDB580D26F3DAC30061D1A5 /* AlamofireAPIClient.swift */; };
 		5EDB581026F3E63B0061D1A5 /* CategoriesVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDB580F26F3E63B0061D1A5 /* CategoriesVIewModel.swift */; };
@@ -47,7 +44,6 @@
 		5E4E903326F0E9C900E906FE /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		5E4E903426F0E9C900E906FE /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
 		5E4E903726F0F99B00E906FE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		5E4E903926F0F9B100E906FE /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
 		5E4E903B26F0FB9200E906FE /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5E4E904026F101F200E906FE /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		5E4E904326F1076900E906FE /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
@@ -69,10 +65,8 @@
 		5E75D7CB26EFC80A002C6C5D /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		5E75D7D026EFC8C3002C6C5D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		5E75D7D526EFCF7B002C6C5D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		5E75D7D626EFCF7B002C6C5D /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
-		5E75D7DB26EFEAF7002C6C5D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		5E75D7DC26EFEAF7002C6C5D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		5E75D7DF26EFEC4E002C6C5D /* UIColor+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Assets.swift"; sourceTree = "<group>"; };
+		5E93FE7826F8D7D800EB8F5E /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		5EDB580B26F3D5D30061D1A5 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
 		5EDB580D26F3DAC30061D1A5 /* AlamofireAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAPIClient.swift; sourceTree = "<group>"; };
 		5EDB580F26F3E63B0061D1A5 /* CategoriesVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVIewModel.swift; sourceTree = "<group>"; };
@@ -170,9 +164,9 @@
 		5E75D7B126EFAC17002C6C5D /* Trivia */ = {
 			isa = PBXGroup;
 			children = (
-				5EDB580A26F3D5C50061D1A5 /* Services */,
-				5E4E903D26F0FF2500E906FE /* Network */,
 				5E75D7CE26EFC831002C6C5D /* Startup */,
+				5E4E903D26F0FF2500E906FE /* Network */,
+				5EDB580A26F3D5C50061D1A5 /* Services */,
 				5E75D7D226EFC948002C6C5D /* Model */,
 				5E75D7D326EFCEB8002C6C5D /* Application */,
 				5E75D7CF26EFC85E002C6C5D /* Resources */,
@@ -184,9 +178,7 @@
 		5E75D7C826EFC7C7002C6C5D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				5E75D7DF26EFEC4E002C6C5D /* UIColor+Assets.swift */,
 				5E75D7C626EFC7C4002C6C5D /* NavigationHelper.swift */,
-				5E4E904726F1184800E906FE /* UIView+Gradient.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -214,6 +206,7 @@
 			children = (
 				5E75D7BB26EFAC18002C6C5D /* Assets.xcassets */,
 				5E75D7C926EFC7CE002C6C5D /* Base */,
+				5E93FE7726F8CAD300EB8F5E /* Extensions */,
 				5E75D7C826EFC7C7002C6C5D /* Utils */,
 			);
 			path = Resources;
@@ -223,7 +216,6 @@
 			isa = PBXGroup;
 			children = (
 				5E4E903726F0F99B00E906FE /* Question.swift */,
-				5E4E903926F0F9B100E906FE /* Trivia.swift */,
 				5E4E903B26F0FB9200E906FE /* Game.swift */,
 				5E4E904026F101F200E906FE /* Category.swift */,
 			);
@@ -237,7 +229,6 @@
 				5E74961E26F23F2000E5C5BE /* Categories */,
 				5E4E904226F1072700E906FE /* Information */,
 				5E4E903226F0E95600E906FE /* Game */,
-				5E75D7DA26EFEADA002C6C5D /* Main */,
 				5E75D7D426EFCED9002C6C5D /* Auth */,
 				5E75D7CA26EFC80A002C6C5D /* SplashViewController.swift */,
 				5E75D7CB26EFC80A002C6C5D /* SplashViewController.xib */,
@@ -249,18 +240,18 @@
 			isa = PBXGroup;
 			children = (
 				5E75D7D526EFCF7B002C6C5D /* SignUpViewController.swift */,
-				5E75D7D626EFCF7B002C6C5D /* SignUpViewController.xib */,
+				5E93FE7826F8D7D800EB8F5E /* SignUpViewController.xib */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		5E75D7DA26EFEADA002C6C5D /* Main */ = {
+		5E93FE7726F8CAD300EB8F5E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5E75D7DB26EFEAF7002C6C5D /* MainViewController.swift */,
-				5E75D7DC26EFEAF7002C6C5D /* MainViewController.xib */,
+				5E75D7DF26EFEC4E002C6C5D /* UIColor+Assets.swift */,
+				5E4E904726F1184800E906FE /* UIView+Gradient.swift */,
 			);
-			path = Main;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5EDB580A26F3D5C50061D1A5 /* Services */ = {
@@ -349,11 +340,10 @@
 			files = (
 				5E75D7BF26EFAC18002C6C5D /* LaunchScreen.storyboard in Resources */,
 				5E75D7BC26EFAC18002C6C5D /* Assets.xcassets in Resources */,
+				5E93FE7926F8D7D800EB8F5E /* SignUpViewController.xib in Resources */,
 				5E74962226F23F3200E5C5BE /* CategoriesViewController.xib in Resources */,
 				5E74962726F23F8A00E5C5BE /* CategoryTableViewCell.xib in Resources */,
 				5E4E903626F0E9C900E906FE /* QuestionViewController.xib in Resources */,
-				5E75D7DE26EFEAF7002C6C5D /* MainViewController.xib in Resources */,
-				5E75D7D826EFCF7B002C6C5D /* SignUpViewController.xib in Resources */,
 				5E75D7CD26EFC80A002C6C5D /* SplashViewController.xib in Resources */,
 				5E4E904626F1076900E906FE /* InformationViewController.xib in Resources */,
 			);
@@ -391,13 +381,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E75D7DD26EFEAF7002C6C5D /* MainViewController.swift in Sources */,
 				5EDB580E26F3DAC30061D1A5 /* AlamofireAPIClient.swift in Sources */,
 				5E75D7D726EFCF7B002C6C5D /* SignUpViewController.swift in Sources */,
 				5E4E904826F1184800E906FE /* UIView+Gradient.swift in Sources */,
 				5EDB581026F3E63B0061D1A5 /* CategoriesVIewModel.swift in Sources */,
 				5E75D7E026EFEC4E002C6C5D /* UIColor+Assets.swift in Sources */,
-				5E4E903A26F0F9B100E906FE /* Trivia.swift in Sources */,
 				5EDB580C26F3D5D30061D1A5 /* CategoryService.swift in Sources */,
 				5E74962126F23F3200E5C5BE /* CategoriesViewController.swift in Sources */,
 				5EDB581426F3E9D10061D1A5 /* QuestionService.swift in Sources */,

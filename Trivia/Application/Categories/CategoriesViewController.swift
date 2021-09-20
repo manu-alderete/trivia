@@ -15,7 +15,8 @@ final class CategoriesViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        hidesNavigationBar = true
+        revertsNavigationBar = false
         viewModel = CategoriesViewModel(categoriesService: CategoryService())
         tableView.dataSource = self
         tableView.delegate = self
@@ -38,6 +39,7 @@ final class CategoriesViewController: BaseViewController {
             }
         })
     }
+    
 }
 
 extension CategoriesViewController: UITableViewDataSource, UITableViewDelegate {
@@ -52,7 +54,12 @@ extension CategoriesViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = QuestionViewController(category: viewModel.categories[indexPath.row])
-        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = QuestionViewController(
+            viewModel: QuestionViewModel(
+                questionService: QuestionService(),
+                category: viewModel.categories[indexPath.row]
+            )
+        )
+        self.parent?.navigationController?.pushViewController(vc, animated: true)
     }
 }

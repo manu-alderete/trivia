@@ -16,8 +16,7 @@ final class QuestionService {
     }
     
     func getQuestions(for categoryId: Int? = nil, completion: @escaping (Result<[Question], Error>) ->Void) {
-        let questionsURL = "https://opentdb.com/api.php?amount=10&type=boolean"
-            //"https://opentdb.com/api.php?" + (categoryId != nil ? "category=\(categoryId!)&" : "") + "type=boolean"
+        let questionsURL = "https://opentdb.com/api.php?" + "amount=10" + (categoryId != nil ? "&category=\(categoryId!)" : "") + "&type=boolean"
         apiClient.get(url: questionsURL) { response in
             switch response {
             case .success(let data):

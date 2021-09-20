@@ -11,10 +11,3 @@ struct Category: Codable {
     let id: Int
     let name: String
 }
-
-//{
-//    "trivia_categories": [
-//        {
-//            "id": 9,
-//            "name": "General Knowledge"
-//        },

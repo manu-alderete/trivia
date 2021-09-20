@@ -14,8 +14,8 @@ final class QuestionViewController: BaseViewController {
     
     var viewModel: QuestionViewModel!
     
-    init(category: Category? = nil) {
-        viewModel = QuestionViewModel(questionService: QuestionService(), category: category)
+    init(viewModel: QuestionViewModel) {
+        self.viewModel = viewModel
         super.init()
     }
     
@@ -26,8 +26,13 @@ final class QuestionViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        hidesNavigationBar = viewModel.category?.name == nil
+        revertsNavigationBar = false
+
         trueButton.imageView?.contentMode = .scaleAspectFit
         falseButton.imageView?.contentMode = .scaleAspectFit
+        
+        trueButton.imageEdgeInsets = UIEdgeInsets(top: 30, left: 30, bottom: 30, right: 30)
         
         trueButton.addTarget(self, action: #selector(trueButtonHandler), for: .touchUpInside)
         falseButton.addTarget(self, action: #selector(falseButtonHandler), for: .touchUpInside)
@@ -38,6 +43,10 @@ final class QuestionViewController: BaseViewController {
         falseButton.isUserInteractionEnabled = false
         
         getQuestions()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
     }
     
     private func getQuestions() {

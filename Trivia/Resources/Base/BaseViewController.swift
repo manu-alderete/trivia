@@ -9,10 +9,12 @@ import Foundation
 import UIKit
 
 class BaseViewController: UIViewController {
+    
     var hidesNavigationBar: Bool = false
+    var revertsNavigationBar: Bool = true
     
     init() {
-        super.init(nibName: nil, bundle: nil)
+        super.init(nibName: String(describing: type(of: self)), bundle: nil)
     }
     
     required init?(coder: NSCoder) {
@@ -25,11 +27,13 @@ class BaseViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = hidesNavigationBar
+        navigationController?.setNavigationBarHidden(hidesNavigationBar, animated: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewDidLoad()
-        navigationController?.isNavigationBarHidden = false
+        super.viewWillDisappear(animated)
+        if revertsNavigationBar {
+            navigationController?.setNavigationBarHidden(false, animated: true)
+        }
     }
 }

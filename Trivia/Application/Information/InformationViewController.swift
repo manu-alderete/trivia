@@ -14,6 +14,7 @@ class InformationViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hidesNavigationBar = true
         scrollView.delegate = self
         closeButton.addTarget(self, action: #selector(closeHandler), for: .touchUpInside)
         scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)

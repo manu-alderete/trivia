@@ -12,7 +12,9 @@ final class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let questionNavigationController = QuestionViewController()
+        let questionNavigationController = QuestionViewController(
+            viewModel: QuestionViewModel(questionService: QuestionService())
+        )
         questionNavigationController.tabBarItem = UITabBarItem(
             title: "Questions",
             image: UIImage(systemName: "shuffle")?.withTintColor(.lightGray),
